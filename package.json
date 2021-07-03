@@ -59,7 +59,8 @@
   "files": [
     "index.js",
     "install.js",
-    "example.js"
+    "example.js",
+    "ffmpeg"
   ],
   "homepage": "https://github.com/eugeneware/ffmpeg-static#readme",
   "keywords": [

@@ -24,6 +24,8 @@ if (process.env.FFMPEG_BIN) {
   if (!binaries[platform] || binaries[platform].indexOf(arch) === -1) {
     ffmpegPath = null
   }
-
+  if(ffmpegPath.includes('/app.asar/')){
+    ffmpegPath = ffmpegPath.replace('/app.asar/', '/app.asar.unpacked/')
+  }
   module.exports = ffmpegPath
 }
